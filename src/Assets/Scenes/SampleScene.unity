@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 531081549}
   - component: {fileID: 531081548}
   - component: {fileID: 531081547}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,9 +582,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1091326150}
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 900253153}
   groundDistance: 0.3
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   gravity: -9.81
