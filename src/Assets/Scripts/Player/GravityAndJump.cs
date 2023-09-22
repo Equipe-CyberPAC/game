@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gravity : MonoBehaviour
+public class GravityAndJump : MonoBehaviour
 {
-
     public CharacterController controller;
     Vector3 velocity;
 
@@ -14,6 +13,8 @@ public class Gravity : MonoBehaviour
     bool isGrounded;
 
     public float gravity = -9.81f;
+
+    public float jumpHeight = 3f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,10 @@ public class Gravity : MonoBehaviour
 
         if(isGrounded && velocity.y < 0){
             velocity.y = -3f;
+        }
+
+        if(Input.GetButtonDown("Jump") && isGrounded){
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
         velocity.y += gravity * Time.deltaTime;

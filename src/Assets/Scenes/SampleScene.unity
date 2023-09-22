@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 1091326151}
   - component: {fileID: 1091326150}
   - component: {fileID: 1091326152}
-  - component: {fileID: 1091326153}
+  - component: {fileID: 1091326154}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1091326150}
   speed: 14
---- !u!114 &1091326153
+--- !u!114 &1091326154
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -587,4 +587,5 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 1024
-  gravity: -9.81
+  gravity: -21
+  jumpHeight: 1.7
